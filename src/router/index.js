@@ -1,10 +1,11 @@
-import { TestRouter, userRouter } from "../components";
+import { MessageRouter, TestRouter, userRouter } from "../components";
 
 // cada vez que quiera agregar unaruta nueva,
 // creo el path e importo el componente
 const listRoutes = [
   ["/test", TestRouter],
-  ["/user", userRouter]
+  ["/user", userRouter],
+  ["/message", MessageRouter]
 ];
 
 export const routes = (app) => {
